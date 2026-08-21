@@ -1,0 +1,28 @@
+abstract class Shape {
+
+    abstract void area();
+
+    void display() {
+        System.out.println("This is a shape");
+    }
+}
+
+class Circle extends Shape {
+
+    int radius = 5;
+
+    void area() {
+        System.out.println("Area = " + (3.14 * radius * radius));
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Circle c = new Circle();
+
+        c.display();
+        c.area();
+    }
+}
